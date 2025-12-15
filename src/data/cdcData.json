@@ -1,0 +1,144 @@
+{
+  "artigos": [
+    {
+      "id": 1,
+      "numero": "Art. 1º",
+      "titulo": "Aplicação da Lei",
+      "texto": "A proteção ao consumidor é um direito fundamental do cidadão.",
+      "palavrasChave": ["defesa", "consumidor", "proteção", "direito"]
+    },
+    {
+      "id": 2,
+      "numero": "Art. 10º",
+      "titulo": "Direitos Básicos do Consumidor",
+      "texto": "São direitos básicos do consumidor: proteção à vida, saúde e segurança; informação clara e completa; publicidade não enganosa; reparação de danos; acesso a órgãos de defesa; e práticas comerciais leais.",
+      "palavrasChave": ["direitos", "proteção", "saúde", "segurança", "informação"]
+    },
+    {
+      "id": 3,
+      "numero": "Art. 20º",
+      "titulo": "Responsabilidade pelo Fato do Produto",
+      "texto": "O fornecedor responde pelos danos causados por defeitos relativos à segurança do produto, considerando-se as expectativas do consumidor.",
+      "palavrasChave": ["defeito", "quebrado", "responsabilidade", "danos", "segurança"]
+    },
+    {
+      "id": 4,
+      "numero": "Art. 25º",
+      "titulo": "Vício do Produto",
+      "texto": "O vício ocorre quando o produto não corresponde às características oferecidas ou é inadequado para o seu fim. O fornecedor tem 30 dias para corrigir o defeito.",
+      "palavrasChave": ["defeito", "vício", "quebrado", "garantia", "30 dias"]
+    },
+    {
+      "id": 5,
+      "numero": "Art. 26º",
+      "titulo": "Garantia",
+      "texto": "O fornecedor é obrigado a manter sua oferta de garantia. Produtos com defeito devem ser reparados em até 30 dias.",
+      "palavrasChave": ["garantia", "defeito", "conserto", "troca", "30 dias"]
+    },
+    {
+      "id": 6,
+      "numero": "Art. 35º",
+      "titulo": "Direito de Arrependimento",
+      "texto": "O consumidor pode desistir do contrato, no prazo de 7 dias a contar da assinatura ou do ato de recebimento do produto ou serviço, sem penalidade e sem necessidade de justificativa.",
+      "palavrasChave": ["arrependimento", "desistência", "devolução", "7 dias", "cancelamento"]
+    },
+    {
+      "id": 7,
+      "numero": "Art. 39º",
+      "titulo": "Práticas Abusivas",
+      "texto": "É vedado ao fornecedor condicionar o fornecimento de produto ou serviço a contratação de outro produto ou serviço, ou mesmo a aquisição de quantidades irrazoáveis.",
+      "palavrasChave": ["abusivo", "prática", "coação", "condição", "injusta"]
+    },
+    {
+      "id": 8,
+      "numero": "Art. 42º",
+      "titulo": "Direito de Devolução",
+      "texto": "Na hipótese do art. 35, bem como no caso de fornecimento de quantidade inferior à contratada, o consumidor pode rejeitar e ensejar a resolução da compra com as devidas restituições.",
+      "palavrasChave": ["devolução", "rejeição", "restituição", "reembolso", "dinheiro"]
+    },
+    {
+      "id": 9,
+      "numero": "Art. 43º",
+      "titulo": "Responsabilidade pela Informação",
+      "texto": "O fornecedor de produtos e serviços é responsável pela informação clara e precisa sobre suas características, composição, qualidade, quantidade, segurança, preço, risco e forma de uso.",
+      "palavrasChave": ["informação", "transparência", "composição", "preço", "segurança"]
+    },
+    {
+      "id": 10,
+      "numero": "Art. 44º",
+      "titulo": "Informação em Vendas a Distância",
+      "texto": "A informação sobre produto ou serviço deve ser transmitida de forma clara e precisa, especificando o fornecedor, características principais, preço e forma de pagamento.",
+      "palavrasChave": ["informação", "compra online", "distância", "transparência", "preço"]
+    },
+    {
+      "id": 11,
+      "numero": "Art. 49º",
+      "titulo": "Direito de Arrependimento em Compras Remotas",
+      "texto": "O consumidor contratante de fornecimento de serviço ou produto pode exercer o direito de arrependimento no prazo de 7 dias úteis, contado a partir da assinatura do contrato ou do ato de recebimento.",
+      "palavrasChave": ["arrependimento", "compra online", "devolução", "7 dias", "cancelamento"]
+    },
+    {
+      "id": 12,
+      "numero": "Art. 51º",
+      "titulo": "Nulidade de Cláusulas Abusivas",
+      "texto": "São nulas de pleno direito, entre outras, as cláusulas que autorizam o fornecedor a modificar unilateralmente o conteúdo ou a qualidade do contrato.",
+      "palavrasChave": ["abusivo", "cláusula", "contrato", "nulo", "injusta"]
+    },
+    {
+      "id": 13,
+      "numero": "Art. 56º",
+      "titulo": "Multa Administrativa",
+      "texto": "As infrações às normas de defesa do consumidor ficam sujeitas, conforme o caso, às seguintes penalidades: multa administrativa.",
+      "palavrasChave": ["multa", "penalidade", "infração", "punição", "órgão"]
+    },
+    {
+      "id": 14,
+      "numero": "Art. 84º",
+      "titulo": "Ação Coletiva",
+      "texto": "Qualquer pessoa pode propor ação coletiva para defesa de direitos e interesses difusos, coletivos ou individuais homogêneos dos consumidores.",
+      "palavrasChave": ["ação", "processo", "justiça", "direito", "defesa"]
+    },
+    {
+      "id": 15,
+      "numero": "Art. 86º",
+      "titulo": "Dano Moral",
+      "texto": "O reparador que causar dano moral ao consumidor será responsável pela indenização correspondente, sem prejuízo das demais penalidades legais.",
+      "palavrasChave": ["dano", "moral", "indenização", "compensação", "prejuízo"]
+    },
+    {
+      "id": 16,
+      "numero": "Art. 101º",
+      "titulo": "Fato do Produto ou Serviço",
+      "texto": "O fornecedor responde pelos danos causados a consumidores por defeitos relativos à segurança do produto ou serviço que o fornecimento não oferecia a segurança que dele legitimamente se esperava.",
+      "palavrasChave": ["defeito", "responsabilidade", "segurança", "danos", "quebrado"]
+    },
+    {
+      "id": 17,
+      "numero": "Art. 128º",
+      "titulo": "Direito de Reclamação",
+      "texto": "O consumidor que se considerar prejudicado por qualquer ato em desacordo com as normas de defesa do consumidor pode formular reclamação junto aos órgãos de proteção.",
+      "palavrasChave": ["reclamação", "defesa", "órgão", "procon", "denúncia"]
+    },
+    {
+      "id": 18,
+      "numero": "Art. 135º",
+      "titulo": "Prazos Legais",
+      "texto": "Prescreve em 5 anos a pretensão à reparação pelos danos causados por fato do produto ou do serviço. Para serviços, o prazo é de 5 anos da entrega.",
+      "palavrasChave": ["prazo", "prescrição", "ação", "tempo", "limite"]
+    },
+    {
+      "id": 19,
+      "numero": "Art. 6º, I",
+      "titulo": "Direito à Segurança",
+      "texto": "Direito à proteção da vida, saúde e segurança contra os riscos causados por produtos e serviços colocados no mercado.",
+      "palavrasChave": ["segurança", "proteção", "vida", "saúde", "risco"]
+    },
+    {
+      "id": 20,
+      "numero": "Art. 6º, II",
+      "titulo": "Direito à Informação",
+      "texto": "Direito à educação e informação sobre o consumo adequado de produtos e serviços, assegurada a liberdade de escolha e a igualdade nas contratações.",
+      "palavrasChave": ["informação", "educação", "transparência", "liberdade", "igualdade"]
+    }
+  ]
+}

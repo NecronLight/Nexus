@@ -1,0 +1,20 @@
+{
+  "kpis": {
+    "totalReclamacoes": 156820,
+    "indiceSolucao": 0.785, 
+    "tempoMedioRespostaDias": 4.5
+  },
+  "rankingEmpresas": [
+    {"nomeFantasia": "Empresa 1", "reclamacoes": 15800},
+    {"nomeFantasia": "Empresa 2", "reclamacoes": 12150},
+    {"nomeFantasia": "Empresa 3", "reclamacoes": 9800},
+    {"nomeFantasia": "Empresa 4", "reclamacoes": 6500},
+    {"nomeFantasia": "Empresa 5", "reclamacoes": 5000}
+  ],
+  "distribuicaoSetor": [
+    {"segmento": "Serviços de Telecomunicação", "total": 45000},
+    {"segmento": "Serviços Financeiros", "total": 35000},
+    {"segmento": "Comércio Eletrônico", "total": 25000},
+    {"segmento": "Serviços Essenciais", "total": 15000}
+  ]
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.titulo-principal {
+    font-size: 40px;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.12));
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo-principal .titulo-text {
+    position: relative;
+    display: inline-block;
+}
+
+/* linhas horizontais (topo e base) */
+.titulo-principal::before,
+.titulo-principal::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px; /* maior espessura */
+    background: rgba(0,0,0,0.18);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.8s ease; /* mais lento */
+}
+.titulo-principal::before { top: 0; transform-origin: left; transition-delay: 0s; }
+.titulo-principal::after { bottom: 0; transform-origin: right; transition-delay: 0.9s; }
+
+/* linhas verticais (esquerda e direita) usando pseudos do span de texto */
+.titulo-principal .titulo-text::before,
+.titulo-principal .titulo-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px; /* maior espessura */
+    background: rgba(0,0,0,0.18);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.8s ease; /* mais lento */
+}
+.titulo-principal .titulo-text::before { left: -25px; transition-delay: 0.3s; transform-origin: top; }
+.titulo-principal .titulo-text::after { right: -25px; transition-delay: 0.6s; transform-origin: bottom; }
+
+.titulo-principal:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.12));
+}
+
+.titulo-principal:hover::before { transform: scaleX(1); transition-delay: 0s; }
+.titulo-principal:hover .titulo-text::before { transform: scaleY(1); transition-delay: 0.3s; }
+.titulo-principal:hover .titulo-text::after { transform: scaleY(1); transition-delay: 0.6s; }
+.titulo-principal:hover::after { transform: scaleX(1); transition-delay: 0.9s; }

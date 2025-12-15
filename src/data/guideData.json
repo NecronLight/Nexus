@@ -1,0 +1,64 @@
+{
+  "guiaEtapas": [
+    {
+      "id": 1,
+      "numero": "01",
+      "titulo": "Contato Inicial",
+      "icone": "📞",
+      "descricao": "Registre e documente sua reclamação",
+      "produtos": {
+        "conteudo": "Como registrar uma reclamação de produto com defeito: 1) Guarde a nota fiscal e embalagem original; 2) Fotografe o defeito de vários ângulos; 3) Registre a data e hora do contato com a empresa; 4) Agende seu atendimento e peça número de protocolo; 5) Guarde e-mails e cópias de conversas; 6) Anote nomes dos atendentes e números de telefone.",
+        "prazos": "O consumidor tem até 30 dias para reportar vício aparente em produtos."
+      },
+      "servicos": {
+        "conteudo": "Como registrar uma reclamação de serviço inadequado: 1) Documente exatamente qual serviço foi mal executado; 2) Tire fotos/vídeos se possível; 3) Guarde recibos e comprovantes de pagamento; 4) Registre datas e horários dos serviços; 5) Solicite protocolo de atendimento por escrito; 6) Mantenha cópias de toda comunicação (SMS, WhatsApp, e-mail).",
+        "prazos": "Serviços com defeito podem ser reclamados até 90 dias após a execução."
+      }
+    },
+    {
+      "id": 2,
+      "numero": "02",
+      "titulo": "Plataformas de Reclamação",
+      "icone": "🌐",
+      "descricao": "Escolha o canal mais adequado",
+      "produtos": {
+        "conteudo": "Plataformas recomendadas para problemas com produtos: \n\n📌 Consumidor.gov.br: Plataforma oficial. A empresa é obrigada a responder em 10 dias. Sem custo.\n\n📌 Procon: Órgão de proteção estatal com poder fiscalizador. Pode aplicar multas à empresa.\n\n📌 Reclame Aqui: Rede privada, sem poder legal, mas há exposição da marca.",
+        "prazos": "Comece pelo Consumidor.gov.br (resposta em 10 dias) antes de escalar para Procon."
+      },
+      "servicos": {
+        "conteudo": "Plataformas recomendadas para problemas com serviços: \n\n📌 Consumidor.gov.br: Para serviços em geral (internet, telefonia, etc).\n\n📌 Anatel: Se for problema com telefonia ou internet fixa/móvel.\n\n📌 Anvisa: Se for problema com serviço de saúde.\n\n📌 Procon: Para fiscalização e multas.",
+        "prazos": "Use a plataforma específica do setor quando existir (Anatel, Anvisa, etc)."
+      }
+    },
+    {
+      "id": 3,
+      "numero": "03",
+      "titulo": "Modelos de Notificação",
+      "icone": "📝",
+      "descricao": "Formalize sua reclamação por escrito",
+      "produtos": {
+        "conteudo": "Modelo de Carta Extrajudicial para Produto com Defeito:\n\n\"Ao [Nome da Empresa],\nVenho por meio desta notificá-lo do descumprimento da garantia legal quanto ao produto [descrição], adquirido em [data], conforme nota fiscal [número].\nO produto apresenta vício [descrever defeito], violando o artigo 18 do CDC (Lei 8.078/90).\nExijo, no prazo de 10 dias, a troca ou reembolso integral.\nCaso não haja retorno, recorrerei ao Consumidor.gov.br e Procon.\"",
+        "prazos": "Envie por e-mail com confirmação de entrega ou por correios com aviso de recebimento."
+      },
+      "servicos": {
+        "conteudo": "Modelo de Carta Extrajudicial para Serviço Não Prestado:\n\n\"Ao [Nome da Empresa],\nVenho por meio desta notificá-lo do descumprimento do contrato de serviço [descrição].\nO serviço contratado não foi executado conforme acordado em [data], causando prejuízo.\nConformo artigo 20 do CDC, exijo resolução do problema ou reembolso integral em 10 dias.\nCaso contrário, formalizar reclamação em órgãos competentes.\"",
+        "prazos": "A empresa tem 10 dias para responder adequadamente."
+      }
+    },
+    {
+      "id": 4,
+      "numero": "04",
+      "titulo": "Juizado Especial Cível",
+      "icone": "⚖️",
+      "descricao": "Resolução na Justiça sem advogado",
+      "produtos": {
+        "conteudo": "Processo no JEC para produto com defeito: O Juizado Especial Cível aceita causas até 20 salários mínimos. Você NÃO precisa de advogado. Passos: 1) Dirija-se ao JEC mais próximo; 2) Preencha formulário de petição inicial; 3) Pague taxa (valores reduzidos); 4) Compareça à audiência; 5) Apresente documentos e provas.",
+        "prazos": "O processo no JEC é rápido (geralmente 6-8 meses). Valor limite: até 20 salários mínimos."
+      },
+      "servicos": {
+        "conteudo": "Processo no JEC para serviço inadequado: Aplica-se aos serviços com valor até 20 salários mínimos. Você pode representar a si mesmo. Procedimento: 1) Prepare documentação (contrato, comprovantes); 2) Redija petição clara listando os direitos violados (CDC art. 20); 3) Compare as fotos/vídeos como prova; 4) Participe da audiência de conciliação.",
+        "prazos": "Duração média: 6-8 meses. Decisão é rápida comparada à justiça comum."
+      }
+    }
+  ]
+}

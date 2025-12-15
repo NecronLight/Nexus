@@ -1,0 +1,8 @@
+{
+  "distribuicaoSetores": [
+    { "name": "Energia", "value": 40 },
+    { "name": "Água e Esgoto", "value": 25 },
+    { "name": "Financeiro", "value": 20 },
+    { "name": "Produtos",  "value": 15 }
+  ]
+}

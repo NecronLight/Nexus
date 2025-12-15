@@ -1,0 +1,73 @@
+/* Styles for Rights (DireitosConsumidor) page */
+.rights-page {
+  padding: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.rights-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.rights-desc {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.rights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #f7fbff;
+  box-shadow: 0 12px 30px rgba(102, 179, 255, 0.08);
+  border-color: #d0e9ff;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-text {
+  margin-top: 10px;
+  color: #444;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #66b3ff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(102, 179, 255, 0.12);
+}
+
+.back-btn:hover {
+  background: #4d9fe6;
+}

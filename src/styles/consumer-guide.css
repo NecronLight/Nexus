@@ -1,0 +1,285 @@
+/* Styles for Consumer Guide page */
+.guide-page {
+  padding: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.guide-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.guide-desc {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* FILTER SECTION */
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.filter-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-btn {
+  padding: 12px 28px;
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #66b3ff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #f0f8ff;
+  border-color: #0056b3;
+  color: #4d9fe6;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 179, 255, 0.18);
+}
+
+/* TIMELINE SECTION */
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 24px;
+  top: 80px;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(180deg, #66b3ff 0%, #e8eef6 100%);
+}
+
+.timeline-item:last-child .timeline-line {
+  display: none;
+}
+
+/* TIMELINE STEP */
+.timeline-step {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #66b3ff 0%, #4d9fe6 100%);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* STEP CONTENT */
+.step-content {
+  flex: 1;
+  background: #ffffff;
+  border: 2px solid #e6e6e6;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step-content:hover {
+  border-color: #66b3ff;
+  box-shadow: 0 6px 20px rgba(102, 179, 255, 0.08);
+}
+
+.step-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.step-info {
+  flex: 1;
+}
+
+.step-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.step-description {
+  margin: 5px 0 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.expand-icon {
+  font-size: 14px;
+  color: #66b3ff;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.expand-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* EXPANDED CONTENT */
+.step-details {
+  padding: 0 20px 20px 20px;
+  border-top: 1px solid #e6e6e6;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-content {
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+  font-size: 15px;
+  white-space: pre-wrap;
+}
+
+.detail-box {
+  background: #eef8ff;
+  border-left: 4px solid #66b3ff;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #0056b3;
+}
+
+.detail-box p {
+  margin: 8px 0 0 0;
+  line-height: 1.6;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .guide-title {
+    font-size: 24px;
+  }
+
+  .guide-desc {
+    font-size: 14px;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .timeline-step {
+    gap: 15px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .step-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .expand-icon {
+    align-self: flex-end;
+  }
+
+  .step-icon {
+    font-size: 24px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .detail-content {
+    font-size: 13px;
+  }
+
+  .detail-box {
+    font-size: 12px;
+  }
+}
