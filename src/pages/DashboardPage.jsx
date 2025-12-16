@@ -3,6 +3,7 @@ import DashboardHeader from '../components/DashboardHeader';
 import KPIBox from '../components/KPIBox';
 import RankingEmpresas from '../components/RankingEmpresas';
 import DistribuicaoProblemas from '../components/DistribuicaoProblemas';
+import BrasilMapComplaints from '../components/BrasilMapComplaints';
 import dashboardData from '../data/dashboardData.json';
 
 const DashboardPage = () => {
@@ -44,9 +45,14 @@ const DashboardPage = () => {
         </div>
 
         {/* Charts Section */}
-        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '20px' }}>
           <RankingEmpresas data={data.rankingEmpresas} />
           <DistribuicaoProblemas />
+        </div>
+
+        {/* Brazil Map Section */}
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <BrasilMapComplaints />
         </div>
       </div>
     </div>

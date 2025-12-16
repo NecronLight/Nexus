@@ -1,0 +1,31 @@
+{
+  "statesComplaints": [
+    { "state": "AC", "name": "Acre", "complaints": 2850 },
+    { "state": "AL", "name": "Alagoas", "complaints": 5420 },
+    { "state": "AP", "name": "Amapá", "complaints": 1950 },
+    { "state": "AM", "name": "Amazonas", "complaints": 4180 },
+    { "state": "BA", "name": "Bahia", "complaints": 18500 },
+    { "state": "CE", "name": "Ceará", "complaints": 12300 },
+    { "state": "DF", "name": "Distrito Federal", "complaints": 8900 },
+    { "state": "ES", "name": "Espírito Santo", "complaints": 7200 },
+    { "state": "GO", "name": "Goiás", "complaints": 9100 },
+    { "state": "MA", "name": "Maranhão", "complaints": 6800 },
+    { "state": "MT", "name": "Mato Grosso", "complaints": 5300 },
+    { "state": "MS", "name": "Mato Grosso do Sul", "complaints": 4900 },
+    { "state": "MG", "name": "Minas Gerais", "complaints": 16200 },
+    { "state": "PA", "name": "Pará", "complaints": 7600 },
+    { "state": "PB", "name": "Paraíba", "complaints": 5100 },
+    { "state": "PR", "name": "Paraná", "complaints": 14800 },
+    { "state": "PE", "name": "Pernambuco", "complaints": 10400 },
+    { "state": "PI", "name": "Piauí", "complaints": 3700 },
+    { "state": "RJ", "name": "Rio de Janeiro", "complaints": 22100 },
+    { "state": "RN", "name": "Rio Grande do Norte", "complaints": 4200 },
+    { "state": "RS", "name": "Rio Grande do Sul", "complaints": 13900 },
+    { "state": "RO", "name": "Rondônia", "complaints": 2100 },
+    { "state": "RR", "name": "Roraima", "complaints": 1400 },
+    { "state": "SC", "name": "Santa Catarina", "complaints": 11200 },
+    { "state": "SP", "name": "São Paulo", "complaints": 28500 },
+    { "state": "SE", "name": "Sergipe", "complaints": 3400 },
+    { "state": "TO", "name": "Tocantins", "complaints": 2600 }
+  ]
+}
