@@ -43,13 +43,13 @@ const BrasilMapComplaints = () => {
     return colors;
   }, []);
 
-  // Agrupamento dos estados por região
+  // Agrupamento dos estados por região (ordenados alfabeticamente)
   const regions = {
-    Norte: ['RR', 'AP', 'AM', 'PA', 'RO', 'AC', 'MT', 'TO'],
-    Nordeste: ['MA', 'PI', 'CE', 'RN', 'PB', 'PE', 'AL', 'SE', 'BA'],
-    'Centro-Oeste': ['GO', 'DF', 'MS'],
-    Sudeste: ['MG', 'SP', 'RJ', 'ES'],
-    Sul: ['PR', 'SC', 'RS']
+    Norte: ['AC', 'AM', 'AP', 'MT', 'PA', 'RO', 'RR', 'TO'],
+    Nordeste: ['AL', 'BA', 'CE', 'MA', 'PB', 'PE', 'PI', 'RN', 'SE'],
+    'Centro-Oeste': ['DF', 'GO', 'MS'],
+    Sudeste: ['ES', 'MG', 'RJ', 'SP'],
+    Sul: ['PR', 'RS', 'SC']
   };
 
   const StateButton = ({ stateCode }) => {
@@ -65,12 +65,12 @@ const BrasilMapComplaints = () => {
         style={{
           padding: '12px 16px',
           backgroundColor: color,
-          border: isHovered ? '3px solid #333' : '2px solid #ddd',
+          border: '2px solid #ddd',
           borderRadius: '6px',
           cursor: 'pointer',
           transition: 'all 0.2s ease',
           transform: isHovered ? 'scale(1.08)' : 'scale(1)',
-          boxShadow: isHovered ? '0 4px 12px rgba(0,0,0,0.3)' : '0 1px 3px rgba(0,0,0,0.1)',
+          boxShadow: isHovered ? '0 6px 16px rgba(0,0,0,0.15)' : '0 1px 3px rgba(0,0,0,0.1)',
           fontWeight: '600',
           fontSize: '13px',
           color: color === '#4caf50' || color === '#8bc34a' ? '#000' : '#fff',
@@ -93,7 +93,7 @@ const BrasilMapComplaints = () => {
       maxWidth: '100%',
       width: '100%'
     }}>
-      <h3 style={{ marginBottom: '20px' }}>🗺️ Reclamações por Estado (Brasil)</h3>
+      <h3 style={{ marginBottom: '20px' }}>🗺️ Número de reclamações por Estado brasileiro (em 2025)</h3>
       
       {/* Legenda de cores */}
       <div style={{ marginBottom: '25px', display: 'flex', gap: '15px', flexWrap: 'wrap', fontSize: '12px' }}>
@@ -142,7 +142,7 @@ const BrasilMapComplaints = () => {
               <div style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fill, minmax(70px, 1fr))',
-                gap: '8px'
+                gap: '12px'
               }}>
                 {states.map(stateCode => (
                   <StateButton key={stateCode} stateCode={stateCode} />

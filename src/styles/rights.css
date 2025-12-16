@@ -36,10 +36,10 @@
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  background: #f7fbff;
-  box-shadow: 0 12px 30px rgba(102, 179, 255, 0.08);
-  border-color: #d0e9ff;
+  transform: translateY(-8px);
+  background: #e3f2fd;
+  box-shadow: 0 16px 40px rgba(25, 118, 210, 0.2);
+  border-color: #1976d2;
 }
 
 .card-icon {
