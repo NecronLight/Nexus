@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div style={{ minHeight: '100vh' }}>
       <Menu />
-      <div style={{ marginTop: '100px' }}>
+      <div style={{ marginTop: '70px' }}>
         <Routes>
           {/* Página principal */}
           <Route path="/" element={<DashboardPage />} />

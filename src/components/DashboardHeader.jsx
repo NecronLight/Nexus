@@ -1,31 +1,71 @@
 import React from 'react';
 
 const DashboardHeader = () => {
-    // Estilos inline básicos para demonstração
     const headerStyle = {
-        padding: '25px',
-        background: 'linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%)',
-        borderRadius: '12px',
-        boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
+        padding: '20px',
         textAlign: 'center',
-        margin: '20px'
+        margin: '0',
+        backgroundColor: 'transparent'
     };
+
     const inputStyle = {
-        padding: '10px',
-        width: '80%',
-        marginTop: '15px',
-        border: '1px solid #ccc',
+        padding: '10px 14px',
+        width: '100%',
+        maxWidth: '400px',
+        marginTop: '12px',
+        border: '1px solid #ddd',
+        borderRadius: '6px',
+        fontSize: '14px',
+        fontFamily: 'inherit',
+        outline: 'none',
+        transition: 'border-color 0.2s ease'
+    };
+
+    const buttonStyle = {
+        margin: '0 6px',
+        padding: '8px 14px',
+        border: '1px solid #ddd',
+        backgroundColor: 'white',
+        color: '#333',
+        fontSize: '13px',
+        fontWeight: '500',
+        cursor: 'pointer',
+        transition: 'all 0.2s ease',
         borderRadius: '4px'
     };
 
     return (
         <header style={headerStyle}>
-            <h1 className="titulo-principal"><span className="titulo-text">CONTROLE DE RECLAMAÇÕES</span></h1>
-            <input type="text" placeholder="Buscar Empresa ou Setor Específico (Ex: Claro, Bancos)" style={inputStyle} />
-            <div style={{ marginTop: '15px' }}>
-                <button style={{ margin: '0 8px', padding: '10px 18px', border: '2px solid #66b3ff', backgroundColor: 'transparent', color: '#66b3ff', fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.3s ease', borderRadius: '6px' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#66b3ff'; e.target.style.color = 'white'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#66b3ff'; }}>Últimos 30 dias</button>
-                <button style={{ margin: '0 8px', padding: '10px 18px', border: '2px solid #66b3ff', backgroundColor: 'transparent', color: '#66b3ff', fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.3s ease', borderRadius: '6px' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#66b3ff'; e.target.style.color = 'white'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#66b3ff'; }}>6 Meses</button>
-                <button style={{ margin: '0 8px', padding: '10px 18px', border: '2px solid #66b3ff', backgroundColor: 'transparent', color: '#66b3ff', fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.3s ease', borderRadius: '6px' }} onMouseEnter={(e) => { e.target.style.backgroundColor = '#66b3ff'; e.target.style.color = 'white'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#66b3ff'; }}>Todos</button>
+            <h2 style={{ margin: '0 0 16px 0', fontSize: '28px', fontWeight: '600', color: '#333' }}>Número de reclamações de empresas em 2025</h2>
+            <input 
+                type="text" 
+                placeholder="Buscar empresa ou setor..." 
+                style={inputStyle}
+                onFocus={(e) => e.target.style.borderColor = '#0fbd0f'}
+                onBlur={(e) => e.target.style.borderColor = '#ddd'}
+            />
+            <div style={{ marginTop: '16px' }}>
+                <button 
+                    style={buttonStyle}
+                    onMouseEnter={(e) => { e.target.style.backgroundColor = '#f0f0f0'; }}
+                    onMouseLeave={(e) => { e.target.style.backgroundColor = 'white'; }}
+                >
+                    Últimos 30 dias
+                </button>
+                <button 
+                    style={buttonStyle}
+                    onMouseEnter={(e) => { e.target.style.backgroundColor = '#f0f0f0'; }}
+                    onMouseLeave={(e) => { e.target.style.backgroundColor = 'white'; }}
+                >
+                    6 Meses
+                </button>
+                <button 
+                    style={buttonStyle}
+                    onMouseEnter={(e) => { e.target.style.backgroundColor = '#f0f0f0'; }}
+                    onMouseLeave={(e) => { e.target.style.backgroundColor = 'white'; }}
+                >
+                    Todos
+                </button>
             </div>
         </header>
     );
