@@ -1,16 +1,28 @@
-# React + Vite
+# 📖 NEXUS - Ferramenta de Proteção ao Consumidor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna que centraliza informações sobre reclamações de empresas, direitos do consumidor e o Código de Defesa do Consumidor (CDC).
 
-Currently, two official plugins are available:
+## 🎯 Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Nexus foi desenvolvido para ajudar consumidores a:
+- 📊 Visualizar rankings de empresas mais reclamadas
+- 🔍 Buscar informações sobre seus direitos no CDC
+- 📈 Acompanhar tendências de reclamações por setor
+- 🗺️ Ver distribuição de reclamações por região
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Dashboard Interativo**: Visualização de KPIs e estatísticas de reclamações
+- **Busca no CDC**: Pesquise artigos do Código de Defesa do Consumidor por palavras-chave
+- **Ranking de Empresas**: Identifique as empresas com maior número de reclamações
+- **Guia do Consumidor**: Informações e orientações sobre direitos do consumidor
+- **Mapa do Brasil**: Visualização geográfica das reclamações por estado
+- **Filtros Temporais**: Análise de dados em diferentes períodos (últimos 30 dias, 6 meses, todos)
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19**: Framework para interface de usuário
+- **Vite**: Build tool e dev server
+- **React Router DOM**: Roteamento de páginas
+- **Recharts**: Gráficos e visualizações de dados
+- **ESLint**: Linting e qualidade de código
