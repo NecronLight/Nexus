@@ -108,6 +108,20 @@ const Menu = () => {
         >
           passo a passo
         </Link>
+        <Link 
+          to="/arvore-decisao" 
+          style={linkStyle}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+            e.target.style.transform = 'translateY(-2px)';
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = 'transparent';
+            e.target.style.transform = 'translateY(0)';
+          }}
+        >
+          reclamação
+        </Link>
       </div>
     </nav>
   );

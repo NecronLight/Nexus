@@ -1,0 +1,85 @@
+{
+  "inicio": {
+    "pergunta": "O que você deseja reclamar?",
+    "opcoes": [
+      { "label": "Produto", "valor": "PRODUTO", "proximo": "naturezaProduto" },
+      { "label": "Serviço", "valor": "SERVICO", "proximo": "naturezaServico" }
+    ]
+  },
+  "naturezaProduto": {
+    "pergunta": "Qual a natureza do produto?",
+    "opcoes": [
+      { "label": "Durável (Eletro/Móveis/Carro)", "valor": "DURAVEL", "proximo": "canalCompra" },
+      { "label": "Não Durável (Alimentos/Cosméticos/Remédios)", "valor": "NAO_DURAVEL", "proximo": "canalCompra" }
+    ]
+  },
+  "canalCompra": {
+    "pergunta": "Como foi feita a aquisição?",
+    "opcoes": [
+      { "label": "Loja Física", "valor": "FISICA", "proximo": "dadosProduto" },
+      { "label": "Loja Online / Telefone", "valor": "ONLINE", "proximo": "dadosProduto" }
+    ]
+  },
+  "dadosProduto": {
+    "tipo": "FORMULARIO",
+    "pergunta": "Informe os detalhes do produto",
+    "campos": [
+      { "nome": "descricaoProduto", "label": "Descrição do produto", "tipo": "text", "placeholder": "Ex: Geladeira Brastemp Frost Free 400L", "obrigatorio": true },
+      { "nome": "valorProduto", "label": "Valor pago (R$)", "tipo": "number", "placeholder": "Ex: 2500.00", "obrigatorio": true },
+      { "nome": "dataCompra", "label": "Data da compra", "tipo": "date", "obrigatorio": true }
+    ],
+    "proximo": "tipoProblema"
+  },
+  "tipoProblema": {
+    "pergunta": "Qual o motivo da reclamação?",
+    "opcoes": [
+      { "label": "Vício de Qualidade (Defeito - Art. 18)", "valor": "VICIO_QUALIDADE", "proximo": "acaoDesejadaPadrao", "textoJuridico": "O produto apresenta vício de qualidade, tornando-o impróprio ao uso, conforme Art. 18 do CDC." },
+      { "label": "Publicidade Enganosa (Art. 35/37)", "valor": "PROPAGANDA", "proximo": "acaoDesejadaPadrao", "textoJuridico": "O produto recebido não condiz com a oferta veiculada, violando o dever de informação e o Art. 35 do CDC." },
+      { "label": "Direito de Arrependimento (Art. 49)", "valor": "ARREPENDIMENTO", "proximo": "acaoDesejadaPadrao", "textoJuridico": "Exerço meu direito de arrependimento dentro do prazo de 7 dias, conforme Art. 49 do CDC." }
+    ]
+  },
+  "naturezaServico": {
+    "pergunta": "Qual o tipo de serviço?",
+    "opcoes": [
+      { "label": "Serviço Contínuo (Telefone/Internet/Energia/Água)", "valor": "SERVICO_CONTINUO", "proximo": "dadosServico" },
+      { "label": "Serviço Pontual (Conserto/Reparo)", "valor": "SERVICO_PONTUAL", "proximo": "dadosServico" }
+    ]
+  },
+  "dadosServico": {
+    "tipo": "FORMULARIO",
+    "pergunta": "Informe os detalhes do serviço",
+    "campos": [
+      { "nome": "descricaoServico", "label": "Descrição do serviço", "tipo": "text", "placeholder": "Ex: Plano de internet 200Mbps - Operadora X", "obrigatorio": true },
+      { "nome": "valorServico", "label": "Valor pago (R$)", "tipo": "number", "placeholder": "Ex: 150.00", "obrigatorio": true },
+      { "nome": "dataContratacao", "label": "Data da contratação", "tipo": "date", "obrigatorio": true }
+    ],
+    "proximo": "tipoProblemaServico"
+  },
+  "tipoProblemaServico": {
+    "pergunta": "Qual o motivo da reclamação?",
+    "opcoes": [
+      { "label": "Atraso na execução (Art. 35)", "valor": "ATRASO_SERVICO", "proximo": "acaoDesejadaPadraoServico", "textoJuridico": "O serviço contratado não foi prestado no prazo ajustado, conforme Art. 35 do CDC." },
+      { "label": "Vício na prestação (Serviço mal feito - Art. 20)", "valor": "VICIO_SERVICO", "proximo": "acaoDesejadaPadraoServico", "textoJuridico": "O serviço apresenta vícios de qualidade, tornando-o impróprio ao consumo, conforme Art. 20 do CDC." },
+      { "label": "Cobrança Indevida (Art. 42)", "valor": "COBRANCA_INDEVIDA", "proximo": "acaoDesejadaPadraoServico", "textoJuridico": "Houve cobrança de quantia indevida, fazendo jus à repetição do indébito pelo dobro do valor pago em excesso, conforme Art. 42 do CDC." }
+    ]
+  },
+  "acaoDesejadaPadrao": {
+    "pergunta": "Qual solução você busca?",
+    "opcoes": [
+      { "label": "Troca do produto", "valor": "TROCA", "proximo": "fim" },
+      { "label": "Restituição do valor", "valor": "RESTITUICAO", "proximo": "fim" }
+    ]
+  },
+  "acaoDesejadaPadraoServico": {
+    "pergunta": "Qual solução você busca?",
+    "opcoes": [
+      { "label": "Reexecução do serviço", "valor": "REEXECUCAO", "proximo": "fim" },
+      { "label": "Abatimento proporcional do preço", "valor": "ABATIMENTO", "proximo": "fim" },
+      { "label": "Devolução do valor pago", "valor": "RESTITUICAO", "proximo": "fim" }
+    ]
+  },
+  "fim": {
+    "titulo": "Reclamação Gerada",
+    "texto": "Documento finalizado."
+  }
+}

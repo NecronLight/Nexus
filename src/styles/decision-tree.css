@@ -1,0 +1,477 @@
+/* ===== Decision Tree Page ===== */
+.dt-page {
+  padding: 20px 20px 60px;
+  font-family: 'Titillium Web', sans-serif;
+  min-height: calc(100vh - 70px);
+  background: #f5f6fa;
+}
+
+.dt-descricao {
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* ===== Progress Bar ===== */
+.dt-progress-container {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dt-progress-bar {
+  flex: 1;
+  height: 10px;
+  background: #dde1e9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dt-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1a73e8, #4fc3f7);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  box-shadow: 0 1px 4px rgba(26, 115, 232, 0.3);
+}
+
+.dt-progress-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* ===== Container ===== */
+.dt-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== Animations ===== */
+.dt-fade-in {
+  animation: dtFadeIn 0.35s ease forwards;
+}
+
+.dt-fade-out {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+}
+
+@keyframes dtFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Breadcrumb ===== */
+.dt-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #777;
+  background: #eef0f5;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.dt-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dt-breadcrumb-sep {
+  color: #aaa;
+  font-size: 16px;
+}
+
+/* ===== Question Card ===== */
+.dt-question-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 36px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dde1e9;
+}
+
+.dt-pergunta {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 28px;
+  text-align: center;
+}
+
+/* ===== Alert ===== */
+.dt-alerta {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+}
+
+.dt-alerta-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.dt-alerta p {
+  margin: 0;
+  font-size: 14px;
+  color: #7a6100;
+  line-height: 1.5;
+}
+
+/* ===== Option Buttons ===== */
+.dt-opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dt-opcao-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 22px;
+  border: 2px solid #d0d5e0;
+  background: #f8f9fc;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c2c3e;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: left;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.dt-opcao-btn:hover {
+  border-color: #1a73e8;
+  background: #e8f0fe;
+  transform: translateX(4px);
+  box-shadow: 0 3px 14px rgba(26, 115, 232, 0.15);
+}
+
+.dt-opcao-btn:active {
+  transform: translateX(2px) scale(0.99);
+}
+
+.dt-opcao-label {
+  flex: 1;
+}
+
+.dt-opcao-arrow {
+  font-size: 18px;
+  color: #999;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.dt-opcao-btn:hover .dt-opcao-arrow {
+  color: #1a73e8;
+  transform: translateX(4px);
+}
+
+/* ===== Form Inputs ===== */
+.dt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dt-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dt-form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.dt-form-required {
+  color: #e53935;
+  margin-left: 3px;
+}
+
+.dt-form-input {
+  padding: 14px 16px;
+  border: 2px solid #c8cedb;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #2c2c3e;
+  background: #f8f9fc;
+  transition: all 0.25s ease;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dt-form-input:focus {
+  border-color: #1a73e8;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.12);
+}
+
+.dt-form-input-erro {
+  border-color: #e53935;
+  background: #fff5f5;
+}
+
+.dt-form-input-erro:focus {
+  border-color: #e53935;
+  box-shadow: 0 0 0 3px rgba(229, 57, 53, 0.1);
+}
+
+.dt-form-erro-msg {
+  font-size: 12px;
+  color: #e53935;
+  font-weight: 500;
+}
+
+.dt-btn-continuar {
+  margin-top: 8px;
+  padding: 16px 28px;
+  font-size: 16px;
+  align-self: stretch;
+}
+
+/* ===== Back Button ===== */
+.dt-btn {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.dt-btn-back {
+  display: block;
+  margin: 20px auto 0;
+  background: transparent;
+  color: #666;
+  border: 1px solid #c8cedb;
+}
+
+.dt-btn-back:hover {
+  background: #eef0f5;
+  color: #333;
+  border-color: #a0a8b8;
+}
+
+/* ===== Final Screen ===== */
+.dt-final-card {
+  text-align: center;
+  border-radius: 16px;
+  padding: 50px 36px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dde1e9;
+  background: #fff;
+}
+
+.dt-final-card.dt-success {
+  border-color: #a5d6a7;
+  background: linear-gradient(180deg, #e8f5e9 0%, #fff 60%);
+}
+
+.dt-final-card.dt-warning {
+  border-color: #ffd54f;
+  background: linear-gradient(180deg, #fff9c4 0%, #fff 60%);
+}
+
+.dt-final-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.dt-final-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 12px;
+}
+
+.dt-final-texto {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 30px;
+  line-height: 1.6;
+}
+
+/* ===== Summary ===== */
+.dt-resumo {
+  text-align: left;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+}
+
+.dt-resumo-titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 14px;
+}
+
+.dt-resumo-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dt-resumo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dt-resumo-item:last-child {
+  border-bottom: none;
+}
+
+.dt-resumo-chave {
+  font-size: 13px;
+  color: #888;
+  flex: 1;
+}
+
+.dt-resumo-valor {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  background: #e8f4fd;
+  padding: 3px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* ===== Final Actions ===== */
+.dt-final-acoes {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dt-btn-primary {
+  background: linear-gradient(135deg, #1a73e8, #1565c0);
+  color: #fff;
+}
+
+.dt-btn-primary:hover {
+  background: linear-gradient(135deg, #1565c0, #0d47a1);
+  box-shadow: 0 4px 16px rgba(26, 115, 232, 0.35);
+}
+
+.dt-btn-secondary {
+  background: #e8eaf0;
+  color: #444;
+}
+
+.dt-btn-secondary:hover {
+  background: #d5d8e0;
+  color: #222;
+}
+
+.dt-btn-outline {
+  background: transparent;
+  color: #1a73e8;
+  border: 2px solid #1a73e8;
+}
+
+.dt-btn-outline:hover {
+  background: #e8f0fe;
+  box-shadow: 0 2px 10px rgba(26, 115, 232, 0.15);
+}
+
+/* ===== Petition Textarea ===== */
+.dt-peticao-wrapper {
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.dt-peticao-textarea {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #2c2c3e;
+  background: #f8f9fc;
+  border: 1px solid #c8cedb;
+  border-radius: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.dt-peticao-textarea:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.12);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .dt-question-card {
+    padding: 24px 18px;
+  }
+
+  .dt-pergunta {
+    font-size: 18px;
+  }
+
+  .dt-opcao-btn {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .dt-final-card {
+    padding: 36px 20px;
+  }
+
+  .dt-resumo-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .dt-final-acoes {
+    flex-direction: column;
+  }
+
+  .dt-breadcrumb {
+    font-size: 12px;
+  }
+}
